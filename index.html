@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css">
+    <link rel="shortcut icon" type="image/png" href="static/images/general/favIcon.png"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="index-page">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-top">
+          <div class="header-top__container container">
+            <div class="header__logo logo"><img class="header__logo-img logo-img" src="static/images/general/logo.png" alt="Российский центр деловых переговоров">
+              <div class="header__logo-text logo-text">
+                <p class="header__logo-title logo-title">Российский центр <br>деловых переговоров</p>
+                <p class="header__logo-subtitle logo-subtitle">Общероссийская общественная организация</p>
+              </div>
+            </div>
+            <div class="header-top__wrap">
+              <div class="header__nav-top">
+                <div class="header__nav-top-callback"><a class="phone" href="tel:+73812500600">+7 (3812) 500-600</a><a class="email" href="mailto:mail@rcdp.ru">mail@rcdp.ru</a></div>
+                <div class="header__nav-top-userdata"><a class="location-link userdata-link js-popup-link-loc" href="#location-popup">
+                    <svg class="svg-sprite-icon icon-location location">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#location"></use>
+                    </svg><a class="location-desc user-desc js-popup-link-loc" href="#location-popup" id="location-desc">Санкт-Петербург</a></a><a class="login-link userdata-link js-popup-link" href="#login-popup">
+                    <svg class="svg-sprite-icon icon-login login">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#login"></use>
+                    </svg><a class="login-desc user-desc js-popup-link" href="#login-popup">Вход</a></a><a class="search-link userdata-link js-popup-link-loc" href="#search-popup">
+                    <svg class="svg-sprite-icon icon-search search">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#search"></use>
+                    </svg><a class="search-desc user-desc js-popup-link-loc" href="#search-popup">Поиск...</a></a></div>
+                <div class="location-choice mfp-hide" id="location-popup">
+                  <div class="location-choice__header">
+                    <input class="location-choice__input input-field" type="text" placeholder="Введите название города" maxlength="20" id="location-choice">
+                  </div>
+                  <input class="location-choice__button btn" type="submit" value="Подтвердить" id="location-button">
+                  <div class="location-choice__body">
+                    <ul class="location-choice__list">
+                      <li class="location-choice__sity">Москва</li>
+                      <li class="location-choice__sity">Санкт-Петербург</li>
+                      <li class="location-choice__sity">Воронеж</li>
+                      <li class="location-choice__sity">Ярославль</li>
+                      <li class="location-choice__sity">Казань</li>
+                      <li class="location-choice__sity">Саратов</li>
+                      <li class="location-choice__sity">Ростов-на-Дону</li>
+                      <li class="location-choice__sity">Красноярск</li>
+                      <li class="location-choice__sity">Нижний Новгород</li>
+                      <li class="location-choice__sity">Челябинск</li>
+                      <li class="location-choice__sity">Екатеринбург</li>
+                      <li class="location-choice__sity">Пермь</li>
+                      <li class="location-choice__sity">Новосибирск</li>
+                      <li class="location-choice__sity">Краснодар</li>
+                      <li class="location-choice__sity">Волгоград</li>
+                      <li class="location-choice__sity">Омск</li>
+                      <li class="location-choice__sity">Якутск</li>
+                      <li class="location-choice__sity">Магадан</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="login__header mfp-hide" id="login-popup">
+                  <div class="login__header-top login-popup login__header-img" style="background-image:url('static/images/general/bg_cabinet.png')">
+                    <div class="login__title">Вход в личный кабинет</div>
+                    <div class="login__forms">
+                      <form class="login__form" action=""><span class="login__form-label">Логин или email:</span>
+                        <input class="input-field login__form-input" type="text" name="login" placeholder="Введите ваш логин или email" required><span class="login__form-label">Пароль:</span>
+                        <input class="input-field login__form-input" type="password" name="password" placeholder="Введите ваш пароль" required><a class="login__form-text js-popup-link" href="#login-lost-pass-popup">Забыли пароль</a>
+                      </form>
+                      <div class="login__form">
+                        <p class="login__form-label">Нет учетной записи?</p><a class="login__form-reg js-popup-link" href="#registration-popup">Пройти регистрацию</a>
+                      </div>
+                    </div>
+                    <div class="login__button">
+                      <input class="login__button-singin btn-login btn" type="submit" value="Вход">
+                    </div>
+                    <div class="login__check">
+                      <input class="login__checkbox" type="checkbox"><span class="login__form-text">Запомнить меня</span>
+                    </div>
+                  </div>
+                  <div class="login__header-bottom login-popup">
+                    <div class="login__name">В личном кабинете вы можете:</div>
+                    <ul class="login__list">
+                      <li class="login__list-item">Подать заявку на оформление услуг </li>
+                      <li class="login__list-item">Отправить необходимые документы </li>
+                      <li class="login__list-item">Обратиться с вопросом к сотруднику </li>
+                      <li class="login__list-item">Отслеживать статус ваших обращений </li>
+                      <li class="login__list-item">Управлять подписками</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="login__header registration__header mfp-hide" id="registration-popup">
+                  <div class="login__header-top registration__header-top login-popup login__header-img" style="background-image:url('static/images/general/bg_cabinet.png')">
+                    <div class="login__title">Регистрация</div>
+                    <div class="login__forms">
+                      <form class="login__form" action=""><span class="login__form-label">Логин:</span>
+                        <input class="input-field login__form-input" type="text" name="login" placeholder="Введите ваш логин" required><span class="login__form-label">Email:</span>
+                        <input class="input-field login__form-input" type="text" name="email" placeholder="Введите ваш email" required><span class="login__form-label">Пароль:</span>
+                        <input class="input-field login__form-input" type="password" name="password" placeholder="Введите ваш пароль" required><span class="login__form-label">Повторите пароль:</span>
+                        <input class="input-field login__form-input" type="password" name="password" placeholder="Повторите пароль" required>
+                      </form>
+                      <div class="login__form">
+                        <p class="login__form-label">Есть учетная запись?</p><a class="login__form-reg js-popup-link" href="#login-popup">Вход</a>
+                      </div>
+                    </div>
+                    <div class="login__button">
+                      <input class="login__button-register btn-login btn" type="submit" value="Регистрация">
+                    </div>
+                  </div>
+                </div>
+                <div class="login__header registration__header registration__header--complete mfp-hide">
+                  <div class="login__header-top registration__header-top registration__header-top--complete login-popup login__header-img" style="background-image:url('static/images/general/bg_cabinet.png')">
+                    <svg class="svg-sprite-icon icon-complete login__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#complete"></use>
+                    </svg>
+                    <div class="login__title">Успешная регистрация</div><span class="login__form-label login__form-label--complete">Проверьте ваш email и подтвердите адрес электронной почты</span>
+                  </div>
+                </div>
+                <div class="login__header registration__header registration__header--lost mfp-hide" id="login-lost-pass-popup">
+                  <div class="login__header-top registration__header-top registration__header-top--lost login-popup login__header-img" style="background-image:url('static/images/general/bg_cabinet.png')">
+                    <div class="login__title">Восстановление пароля</div><span class="login__form-label login__form-label--lost">Введите email, использованный при регистрации:</span>
+                    <input class="input-field login__form-input" type="text" name="email" placeholder="Введите ваш email" required>
+                    <input class="login__button-register login__button-register--lost btn-login btn" type="submit" value="Отправить"><span class="login__form-label login__form-label--lost">На указаный email будет отправлено уведомление с инструкциями по восстановлению пароля</span>
+                  </div>
+                </div>
+                <div class="search__form mfp-hide" id="search-popup">
+                  <input class="input-field search-field" type="text" placeholder="Введите ваш запрос" maxlength="70">
+                  <input class="search__button performance__group-button performance__group-button--search btn" type="submit" value="Найти">
+                </div>
+              </div>
+              <ul class="header__nav">
+                <li class="header__nav-item"><a class="header__nav-link" href="index.html">Главная</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="for_us_page.html">О нас</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="press_center_page.html">Пресс-центр</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="comitet_page.html">Комитеты</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="not_found_page.html">Проекты</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="not_found_page.html">Регионы</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="contacts_page.html">Контакты</a></li>
+              </ul>
+            </div>
+            <button class="hamburger hamburger--squeeze"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="header-main header-img" style="background-image:url('static/images/general/bg1.png')">
+          <div class="header-main__container container">
+            <div class="header__label">
+              <h2 class="header__label-title block__title">Интересное название и крупный заголовок</h2>
+              <p class="header__label-text block__text">Предоставление транспортно-экспедиторского обслуживания аккредитованными Партнерами РЭЦ. Консультации по оформлению транспортныхи сопроводительных документов.</p><a class="header__label-button btn-discover btn" href="for_us_page.html">Узнать подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="block1">
+          <div class="block1__container container">
+            <div class="anons pod_block">
+              <h2 class="anons__title block__title">Анонсы мероприятий</h2>
+              <div class="anons__prev"><img class="anons__prev-pic" src="static/images/content/bg_anons.png" alt="фото анонса">
+                <time class="anons__prev-date block__date" datetime="01.01.2019T12.00">01.01.2019 12.00</time>
+              </div>
+              <p class="anons__text block__text">Общество с ограниченной ответственностью «Интернет-компания инновационного продукта «Виктория». Основная специализация компании — это комплексные решения по разработке и поддержке сайтов для любых задач в сети Интернет.</p>
+              <div class="anons__prev"><img class="anons__prev-pic" src="static/images/content/bg_anons.png" alt="фото анонса">
+                <time class="anons__prev-date block__date" datetime="01.01.2019T12.00">01.01.2019 12.00</time>
+              </div>
+              <p class="anons__text block__text">Общество с ограниченной ответственностью «Интернет-компания инновационного продукта «Виктория». Основная специализация компании — это комплексные решения по разработке и поддержке сайтов для любых задач в сети Интернет.</p><a class="anons__button_show" href="press_center_page.html">Показать больше...</a>
+            </div>
+            <div class="news pod_block">
+              <h2 class="news__title block__title">Новости</h2>
+              <div class="news__button">
+                <button class="news__button-left btn">Центра</button>
+                <button class="news__button-right btn">Комитетов</button>
+              </div>
+              <div class="news__wrap news__center">
+                <div class="news__block"><img class="news__block-img" src="static/images/content/pic_news.png" alt="фото новости">
+                  <div class="news__block-info"><a class="news__label" href="not_found_page.html">Название новости центра</a>
+                    <p class="news__text block__text">Мы предлагаем полный спектр услуг по разработке сайтов, помогаем нашим клиентам выстраивать эффективные маркетинговые.</p>
+                    <time class="news__date block__date" datetime="02.02.2019T16.00">02.02.2019 16.00</time>
+                  </div>
+                </div>
+                <div class="news__block"><img class="news__block-img" src="static/images/content/pic_news.png" alt="фото новости">
+                  <div class="news__block-info"><a class="news__label" href="not_found_page.html">Название новости центра</a>
+                    <p class="news__text block__text">Мы предлагаем полный спектр услуг по разработке сайтов, помогаем нашим клиентам выстраивать эффективные маркетинговые.</p>
+                    <time class="news__date block__date" datetime="02.02.2019T16.00">02.02.2019 16.00</time>
+                  </div>
+                </div>
+                <div class="news__block"><img class="news__block-img" src="static/images/content/pic_news.png" alt="фото новости">
+                  <div class="news__block-info"><a class="news__label" href="not_found_page.html">Название новости центра</a>
+                    <p class="news__text block__text">Мы предлагаем полный спектр услуг по разработке сайтов, помогаем нашим клиентам выстраивать эффективные маркетинговые.</p>
+                    <time class="news__date block__date" datetime="02.02.2019T16.00">02.02.2019 16.00</time>
+                  </div>
+                </div>
+                <div class="news__block"><img class="news__block-img" src="static/images/content/pic_news.png" alt="фото новости">
+                  <div class="news__block-info"><a class="news__label" href="not_found_page.html">Название новости центра</a>
+                    <p class="news__text block__text">Мы предлагаем полный спектр услуг по разработке сайтов, помогаем нашим клиентам выстраивать эффективные маркетинговые.</p>
+                    <time class="news__date block__date" datetime="02.02.2019T16.00">02.02.2019 16.00</time>
+                  </div>
+                </div>
+                <div class="news__block"><img class="news__block-img" src="static/images/content/pic_news.png" alt="фото новости">
+                  <div class="news__block-info"><a class="news__label" href="not_found_page.html">Название новости центра</a>
+                    <p class="news__text block__text">Мы предлагаем полный спектр услуг по разработке сайтов, помогаем нашим клиентам выстраивать эффективные маркетинговые.</p>
+                    <time class="news__date block__date" datetime="02.02.2019T16.00">02.02.2019 16.00		</time>
+                  </div>
+                </div>
+              </div>
+              <div class="news__wrap news__comitet">
+                <div class="news__block"><img class="news__block-img" src="static/images/content/pic_comitet.jpg" alt="фото новости">
+                  <div class="news__block-info"><a class="news__label" href="not_found_page.html">Название новости комитета</a>
+                    <p class="news__text block__text">Мы предлагаем полный спектр услуг по разработке сайтов, помогаем нашим клиентам выстраивать эффективные маркетинговые.</p>
+                    <time class="news__date block__date" datetime="02.02.2019T16.00">02.02.2019 16.00</time>
+                  </div>
+                </div>
+                <div class="news__block"><img class="news__block-img" src="static/images/content/pic_comitet.jpg" alt="фото новости">
+                  <div class="news__block-info"><a class="news__label" href="not_found_page.html">Название новости комитета</a>
+                    <p class="news__text block__text">Мы предлагаем полный спектр услуг по разработке сайтов, помогаем нашим клиентам выстраивать эффективные маркетинговые.</p>
+                    <time class="news__date block__date" datetime="02.02.2019T16.00">02.02.2019 16.00</time>
+                  </div>
+                </div>
+                <div class="news__block"><img class="news__block-img" src="static/images/content/pic_comitet.jpg" alt="фото новости">
+                  <div class="news__block-info"><a class="news__label" href="not_found_page.html">Название новости комитета</a>
+                    <p class="news__text block__text">Мы предлагаем полный спектр услуг по разработке сайтов, помогаем нашим клиентам выстраивать эффективные маркетинговые.</p>
+                    <time class="news__date block__date" datetime="02.02.2019T16.00">02.02.2019 16.00</time>
+                  </div>
+                </div>
+                <div class="news__block"><img class="news__block-img" src="static/images/content/pic_comitet.jpg" alt="фото новости">
+                  <div class="news__block-info"><a class="news__label" href="not_found_page.html">Название новости комитета</a>
+                    <p class="news__text block__text">Мы предлагаем полный спектр услуг по разработке сайтов, помогаем нашим клиентам выстраивать эффективные маркетинговые.</p>
+                    <time class="news__date block__date" datetime="02.02.2019T16.00">02.02.2019 16.00</time>
+                  </div>
+                </div>
+                <div class="news__block"><img class="news__block-img" src="static/images/content/pic_comitet.jpg" alt="фото новости">
+                  <div class="news__block-info"><a class="news__label" href="not_found_page.html">Название новости комитета</a>
+                    <p class="news__text block__text">Мы предлагаем полный спектр услуг по разработке сайтов, помогаем нашим клиентам выстраивать эффективные маркетинговые.</p>
+                    <time class="news__date block__date" datetime="02.02.2019T16.00">02.02.2019 16.00		</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="for_us" style="background-image:url('static/images/general/bg2.png')">
+          <div class="for_us__container container">
+            <div class="for_us__description">
+              <h2 class="for_us__title block__title">Несколько слов о нас</h2>
+              <p class="for__us__text-top block__text">Общество с ограниченной ответственностью «Интернет-компания инновационного продукта «Виктория». Основная специализация компании — это комплексные решения по разработке и поддержке сайтов для любых задач в сети Интернет.</p>
+              <p class="for_us__text-bottom block__text">Мы предлагаем полный спектр услуг по разработке сайтов, помогаем нашим клиентам выстраивать эффективные маркетинговые коммуникации с целевой аудиторией, консультируем по вопросам работы и всегда готовы предложить альтернативные методы решения проблем. За время работы нами было выполнено более 50 крупных и порядка 200 небольших проектов, что позволило получить хороший опыт и знание в сфере веб-разработок.</p>
+              <div class="for_us__wrap">
+                <div class="for_us__futures"><img class="for_us__futeres-img" src="static/images/content/icon1.png" alt="иконка преимущества">
+                  <div class="for_us__futures-wrapper">
+                    <h5 class="for_us__futures-name">Первое название</h5>
+                    <ul class="for_us__futures-list">
+                      <li class="for_us__futures-item"><span class="for_us__futures-desc">Не дорого</span></li>
+                      <li class="for_us__futures-item"><span class="for_us__futures-desc">Хорошо</span></li>
+                      <li class="for_us__futures-item"><span class="for_us__futures-desc">Плохо</span></li>
+                      <li class="for_us__futures-item"><span class="for_us__futures-desc">Интересно</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="for_us__futures"><img class="for_us__futeres-img" src="static/images/content/icon2.png" alt="иконка преимущества">
+                  <div class="for_us__futures-wrapper">
+                    <h5 class="for_us__futures-name">Второе название</h5>
+                    <ul class="for_us__futures-list">
+                      <li class="for_us__futures-item"><span class="for_us__futures-desc">Не дорого</span></li>
+                      <li class="for_us__futures-item"><span class="for_us__futures-desc">Хорошо</span></li>
+                      <li class="for_us__futures-item"><span class="for_us__futures-desc">Плохо</span></li>
+                      <li class="for_us__futures-item"><span class="for_us__futures-desc">Интересно</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="for_us__wrap">
+                <div class="for_us__futures"><img class="for_us__futeres-img" src="static/images/content/icon3.png" alt="иконка преимущества">
+                  <div class="for_us__futures-wrapper">
+                    <h5 class="for_us__futures-name">Третье название</h5>
+                    <ul class="for_us__futures-list">
+                      <li class="for_us__futures-item"><span class="for_us__futures-desc">Не дорого</span></li>
+                      <li class="for_us__futures-item"><span class="for_us__futures-desc">Хорошо</span></li>
+                      <li class="for_us__futures-item"><span class="for_us__futures-desc">Плохо</span></li>
+                      <li class="for_us__futures-item"><span class="for_us__futures-desc">Интересно</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="for_us__futures"><img class="for_us__futeres-img" src="static/images/content/icon4.png" alt="иконка преимущества">
+                  <div class="for_us__futures-wrapper">
+                    <h5 class="for_us__futures-name">Четвертое название</h5>
+                    <ul class="for_us__futures-list">
+                      <li class="for_us__futures-item"><span class="for_us__futures-desc">Не дорого</span></li>
+                      <li class="for_us__futures-item"><span class="for_us__futures-desc">Хорошо</span></li>
+                      <li class="for_us__futures-item"><span class="for_us__futures-desc">Плохо</span></li>
+                      <li class="for_us__futures-item"><span class="for_us__futures-desc">Интересно</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="for_us__slider">
+              <div class="slider js-slider-main"><img class="slider-img" src="static/images/content/sl11.jpg" alt="фото контента"><img class="slider-img" src="static/images/content/sl12.jpg" alt="фото контента"><img class="slider-img" src="static/images/content/sl13.jpg" alt="фото контента"><img class="slider-img" src="static/images/content/sl14.jpg" alt="фото контента"><img class="slider-img" src="static/images/content/sl15.jpg" alt="фото контента"><img class="slider-img" src="static/images/content/sl16.jpg" alt="фото контента"></div>
+            </div>
+          </div>
+        </div>
+        <div class="performance">
+          <div class="performance__container container">
+            <div class="performance__container-group performance__container-group-title">
+              <h2 class="performance__title block__title">Эти цифры вас удивят!</h2>
+            </div>
+            <div class="performance-wrapper">
+              <div class="performance__container-group">
+                <div class="performance__group"><span class="performance__group-num block__title">320</span>
+                  <p class="performance__group-desc block__text">постоянных партнеров</p>
+                </div>
+                <p class="performance__group-text block__text">Общество с ограниченной ответственностью «Интернет- компания инновационного продукта «Виктория». Основная специализация компании — это комплексные решения по разработке и поддержке сайтов для любых задач в сети Интернет.</p><a class="performance__group-button btn" href="comitet_page.html">Узнать подробности</a>
+              </div>
+              <div class="performance__container-group">
+                <div class="performance__group"><span class="performance__group-num block__title">450</span>
+                  <p class="performance__group-desc block__text">постоянных партнеров</p>
+                </div>
+                <p class="performance__group-text block__text">Общество с ограниченной ответственностью «Интернет- компания инновационного продукта «Виктория». Основная специализация компании — это комплексные решения по разработке и поддержке сайтов для любых задач в сети Интернет.</p><a class="performance__group-button btn" href="comitet_page.html">Узнать подробности</a>
+              </div>
+              <div class="performance__container-group">
+                <div class="performance__group"><span class="performance__group-num block__title">280</span>
+                  <p class="performance__group-desc block__text">постоянных партнеров</p>
+                </div>
+                <p class="performance__group-text block__text">Общество с ограниченной ответственностью «Интернет- компания инновационного продукта «Виктория». Основная специализация компании — это комплексные решения по разработке и поддержке сайтов для любых задач в сети Интернет.</p><a class="performance__group-button btn" href="comitet_page.html">Узнать подробности</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="interest" style="background-image:url('static/images/general/bg3.png')">
+          <div class="interest__container container">
+            <h2 class="interest__title block__title">Какие-то интересные блоки</h2>
+            <p class="interest__text block__text">Общество с ограниченной ответственностью «Интернет-компания инновационного продукта «Виктория». Основная специализация компании — это комплексные решения по разработке и поддержке сайтов для любых задач в сети Интернет.</p>
+            <div class="interest__block js-interest-block"><a href="static/images/content/int1.jpg"><img class="interest__block-prev" src="static/images/content/int1.jpg" alt="фото блока"></a><a href="static/images/content/int2.jpg"><img class="interest__block-prev" src="static/images/content/int2.jpg" alt="фото блока"></a><a href="static/images/content/int3.jpg"><img class="interest__block-prev" src="static/images/content/int3.jpg" alt="фото блока"></a><a href="static/images/content/int4.jpg"><img class="interest__block-prev" src="static/images/content/int4.jpg" alt="фото блока"></a><a href="static/images/content/int5.jpg"><img class="interest__block-prev" src="static/images/content/int5.jpg" alt="фото блока"></a><a href="static/images/content/int6.jpg"><img class="interest__block-prev" src="static/images/content/int6.jpg" alt="фото блока"></a></div>
+          </div>
+        </div>
+        <div class="another_part">
+          <div class="another_part__container container">
+            <div class="another_part__info">
+              <h2 class="another_part__info-title block__title">Еще один раздел</h2>
+              <p class="anotner_part__text block__text">Общество с ограниченной ответственностью «Интернет-компания инновационного продукта «Виктория». Основная специализация компании — это комплексные решения по разработке и поддержке сайтов для любых задач в сети Интернет.</p>
+              <p class="anotner_part__text block__text">Мы предлагаем полный спектр услуг по разработке сайтов, помогаем нашим клиентам выстраивать эффективные маркетинговые коммуникации с целевой аудиторией, консультируем по вопросам работы и всегда готовы предложить альтернативные методы решения проблем. За время работы нами было выполнено более 50 крупных и порядка 200 небольших проектов, что позволило получить хороший опыт и знание в сфере веб-разработок.</p>
+            </div>
+            <div class="another_part__slider">
+              <div class="slider js-slider-main"><img class="slider-img" src="static/images/content/sl21.jpg" alt="фото контента"><img class="slider-img" src="static/images/content/sl22.jpg" alt="фото контента"><img class="slider-img" src="static/images/content/sl23.jpg" alt="фото контента"><img class="slider-img" src="static/images/content/sl24.jpg" alt="фото контента"><img class="slider-img" src="static/images/content/sl25.jpg" alt="фото контента"><img class="slider-img" src="static/images/content/sl26.jpg" alt="фото контента"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__contacts footer__group">
+            <div class="footer__logo"><img class="footer__logo-img logo-img" src="static/images/general/logo.png" alt="Российский центр деловых переговоров">
+              <div class="footer__logo-text">
+                <p class="footer__logo-title logo-title">Российский центр <br>деловых переговоров</p>
+                <p class="footer__logo-subtitle logo-subtitle">Общероссийская общественная организация</p>
+              </div>
+            </div><a class="phone phone-footer" href="tel:+73812500600">+7 (3812) 500-600</a><a class="email email-footer" href="mailto:mail@rcdp.ru">mail@rcdp.ru</a>
+          </div>
+          <div class="footer__for_us footer__group">
+            <h5 class="for_us__title footer__title">О нас</h5>
+            <ul class="for_us__nav footer__nav">
+              <li class="for_us__list"><a class="for_us__link footer__link" href="for_us_page.html">Вступить</a></li>
+              <li class="for_us__list"><a class="for_us__link footer__link" href="for_us_page.html">Руководящие органы</a></li>
+              <li class="for_us__list"><a class="for_us__link footer__link" href="for_us_page.html">Уставные документы</a></li>
+              <li class="for_us__list"><a class="for_us__link footer__link" href="for_us_page.html">Официальноя символика</a></li>
+            </ul>
+            <h5 class="for_us__title footer__title">Пресс-центр</h5>
+            <ul class="for_us__nav">
+              <li class="for_us__list"><a class="for_us__link footer__link" href="press_center_page.html">Анонсы мероприятий</a></li>
+              <li class="for_us__list"><a class="for_us__link footer__link" href="press_center_page.html">Новости</a></li>
+              <li class="for_us__list"><a class="for_us__link footer__link" href="press_center_page.html">Фото</a></li>
+              <li class="for_us__list"><a class="for_us__link footer__link" href="press_center_page.html">Видео</a></li>
+              <li class="for_us__list"><a class="for_us__link footer__link" href="press_center_page.html">СМИ о нас			</a></li>
+            </ul>
+          </div>
+          <div class="footer__comitet footer__group">
+            <h5 class="comitet__title footer__title">Комитеты</h5>
+            <ul class="comitet__nav footer__nav">
+              <li class="comitet__list"><a class="comitet__link footer__link" href="comitet_page.html">О комитете</a></li>
+              <li class="comitet__list"><a class="comitet__link footer__link" href="comitet_page.html">Лица</a></li>
+              <li class="comitet__list"><a class="comitet__link footer__link" href="comitet_page.html">Новости</a></li>
+              <li class="comitet__list"><a class="comitet__link footer__link" href="comitet_page.html">Фото</a></li>
+              <li class="comitet__list"><a class="comitet__link footer__link" href="comitet_page.html">Видео</a></li>
+              <li class="comitet__list"><a class="comitet__link footer__link" href="comitet_page.html">СМИ о проекте</a></li>
+              <li class="comitet__list"><a class="comitet__link footer__link" href="comitet_page.html">Положения</a></li>
+              <li class="comitet__list"><a class="comitet__link footer__link" href="comitet_page.html">Состав</a></li>
+            </ul>
+          </div>
+          <div class="footer__social footer__group">
+            <div class="social-menu">
+              <h5 class="social__title footer__title">Дополнительно</h5>
+              <ul class="social__nav footer__nav">
+                <li class="social__list"><a class="social__link footer__link" href="not_found_page.html">Проекты</a></li>
+                <li class="social__list"><a class="social__link footer__link" href="not_found_page.html">Регионы</a></li>
+                <li class="social__list"><a class="social__link footer__link" href="contacts_page.html">Контакты</a></li>
+                <li class="social__list"><a class="social__link footer__link js-footer-login js-popup-link" href="#login-popup">Вход</a></li>
+              </ul>
+            </div>
+            <div class="social-icons footer__social-icons"><a href="https://vk.com/">
+                <svg class="svg-sprite-icon icon-vk social__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#vk"></use>
+                </svg></a><a href="https://www.facebook.com/">
+                <svg class="svg-sprite-icon icon-fb social__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#fb"></use>
+                </svg></a><a href="https://www.linkedin.com/">
+                <svg class="svg-sprite-icon icon-liin social__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#liin"></use>
+                </svg></a><a href="https://www.instagram.com/">
+                <svg class="svg-sprite-icon icon-inst social__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#inst"></use>
+                </svg></a></div>
+          </div>
+        </div>
+      </footer>
+      <svg class="svg-sprite-icon icon-scroll_up button__scroll_up">
+        <use xlink:href="static/images/svg/symbol/sprite.svg#scroll_up"></use>
+      </svg>
+    </div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>

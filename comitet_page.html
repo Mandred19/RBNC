@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Комитеты</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.min.css">
+    <link rel="shortcut icon" type="image/png" href="static/images/general/favIcon.png"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="comitet_page-page">
+    <div class="wrapper">
+      <header class="header">
+        <div class="header-top">
+          <div class="header-top__container container">
+            <div class="header__logo logo"><img class="header__logo-img logo-img" src="static/images/general/logo.png" alt="Российский центр деловых переговоров">
+              <div class="header__logo-text logo-text">
+                <p class="header__logo-title logo-title">Российский центр <br>деловых переговоров</p>
+                <p class="header__logo-subtitle logo-subtitle">Общероссийская общественная организация</p>
+              </div>
+            </div>
+            <div class="header-top__wrap">
+              <div class="header__nav-top">
+                <div class="header__nav-top-callback"><a class="phone" href="tel:+73812500600">+7 (3812) 500-600</a><a class="email" href="mailto:mail@rcdp.ru">mail@rcdp.ru</a></div>
+                <div class="header__nav-top-userdata"><a class="location-link userdata-link js-popup-link-loc" href="#location-popup">
+                    <svg class="svg-sprite-icon icon-location location">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#location"></use>
+                    </svg><a class="location-desc user-desc js-popup-link-loc" href="#location-popup" id="location-desc">Санкт-Петербург</a></a><a class="login-link userdata-link js-popup-link" href="#login-popup">
+                    <svg class="svg-sprite-icon icon-login login">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#login"></use>
+                    </svg><a class="login-desc user-desc js-popup-link" href="#login-popup">Вход</a></a><a class="search-link userdata-link js-popup-link-loc" href="#search-popup">
+                    <svg class="svg-sprite-icon icon-search search">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#search"></use>
+                    </svg><a class="search-desc user-desc js-popup-link-loc" href="#search-popup">Поиск...</a></a></div>
+                <div class="location-choice mfp-hide" id="location-popup">
+                  <div class="location-choice__header">
+                    <input class="location-choice__input input-field" type="text" placeholder="Введите название города" maxlength="20" id="location-choice">
+                  </div>
+                  <input class="location-choice__button btn" type="submit" value="Подтвердить" id="location-button">
+                  <div class="location-choice__body">
+                    <ul class="location-choice__list">
+                      <li class="location-choice__sity">Москва</li>
+                      <li class="location-choice__sity">Санкт-Петербург</li>
+                      <li class="location-choice__sity">Воронеж</li>
+                      <li class="location-choice__sity">Ярославль</li>
+                      <li class="location-choice__sity">Казань</li>
+                      <li class="location-choice__sity">Саратов</li>
+                      <li class="location-choice__sity">Ростов-на-Дону</li>
+                      <li class="location-choice__sity">Красноярск</li>
+                      <li class="location-choice__sity">Нижний Новгород</li>
+                      <li class="location-choice__sity">Челябинск</li>
+                      <li class="location-choice__sity">Екатеринбург</li>
+                      <li class="location-choice__sity">Пермь</li>
+                      <li class="location-choice__sity">Новосибирск</li>
+                      <li class="location-choice__sity">Краснодар</li>
+                      <li class="location-choice__sity">Волгоград</li>
+                      <li class="location-choice__sity">Омск</li>
+                      <li class="location-choice__sity">Якутск</li>
+                      <li class="location-choice__sity">Магадан</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="login__header mfp-hide" id="login-popup">
+                  <div class="login__header-top login-popup login__header-img" style="background-image:url('static/images/general/bg_cabinet.png')">
+                    <div class="login__title">Вход в личный кабинет</div>
+                    <div class="login__forms">
+                      <form class="login__form" action=""><span class="login__form-label">Логин или email:</span>
+                        <input class="input-field login__form-input" type="text" name="login" placeholder="Введите ваш логин или email" required><span class="login__form-label">Пароль:</span>
+                        <input class="input-field login__form-input" type="password" name="password" placeholder="Введите ваш пароль" required><a class="login__form-text js-popup-link" href="#login-lost-pass-popup">Забыли пароль</a>
+                      </form>
+                      <div class="login__form">
+                        <p class="login__form-label">Нет учетной записи?</p><a class="login__form-reg js-popup-link" href="#registration-popup">Пройти регистрацию</a>
+                      </div>
+                    </div>
+                    <div class="login__button">
+                      <input class="login__button-singin btn-login btn" type="submit" value="Вход">
+                    </div>
+                    <div class="login__check">
+                      <input class="login__checkbox" type="checkbox"><span class="login__form-text">Запомнить меня</span>
+                    </div>
+                  </div>
+                  <div class="login__header-bottom login-popup">
+                    <div class="login__name">В личном кабинете вы можете:</div>
+                    <ul class="login__list">
+                      <li class="login__list-item">Подать заявку на оформление услуг </li>
+                      <li class="login__list-item">Отправить необходимые документы </li>
+                      <li class="login__list-item">Обратиться с вопросом к сотруднику </li>
+                      <li class="login__list-item">Отслеживать статус ваших обращений </li>
+                      <li class="login__list-item">Управлять подписками</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="login__header registration__header mfp-hide" id="registration-popup">
+                  <div class="login__header-top registration__header-top login-popup login__header-img" style="background-image:url('static/images/general/bg_cabinet.png')">
+                    <div class="login__title">Регистрация</div>
+                    <div class="login__forms">
+                      <form class="login__form" action=""><span class="login__form-label">Логин:</span>
+                        <input class="input-field login__form-input" type="text" name="login" placeholder="Введите ваш логин" required><span class="login__form-label">Email:</span>
+                        <input class="input-field login__form-input" type="text" name="email" placeholder="Введите ваш email" required><span class="login__form-label">Пароль:</span>
+                        <input class="input-field login__form-input" type="password" name="password" placeholder="Введите ваш пароль" required><span class="login__form-label">Повторите пароль:</span>
+                        <input class="input-field login__form-input" type="password" name="password" placeholder="Повторите пароль" required>
+                      </form>
+                      <div class="login__form">
+                        <p class="login__form-label">Есть учетная запись?</p><a class="login__form-reg js-popup-link" href="#login-popup">Вход</a>
+                      </div>
+                    </div>
+                    <div class="login__button">
+                      <input class="login__button-register btn-login btn" type="submit" value="Регистрация">
+                    </div>
+                  </div>
+                </div>
+                <div class="login__header registration__header registration__header--complete mfp-hide">
+                  <div class="login__header-top registration__header-top registration__header-top--complete login-popup login__header-img" style="background-image:url('static/images/general/bg_cabinet.png')">
+                    <svg class="svg-sprite-icon icon-complete login__icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#complete"></use>
+                    </svg>
+                    <div class="login__title">Успешная регистрация</div><span class="login__form-label login__form-label--complete">Проверьте ваш email и подтвердите адрес электронной почты</span>
+                  </div>
+                </div>
+                <div class="login__header registration__header registration__header--lost mfp-hide" id="login-lost-pass-popup">
+                  <div class="login__header-top registration__header-top registration__header-top--lost login-popup login__header-img" style="background-image:url('static/images/general/bg_cabinet.png')">
+                    <div class="login__title">Восстановление пароля</div><span class="login__form-label login__form-label--lost">Введите email, использованный при регистрации:</span>
+                    <input class="input-field login__form-input" type="text" name="email" placeholder="Введите ваш email" required>
+                    <input class="login__button-register login__button-register--lost btn-login btn" type="submit" value="Отправить"><span class="login__form-label login__form-label--lost">На указаный email будет отправлено уведомление с инструкциями по восстановлению пароля</span>
+                  </div>
+                </div>
+                <div class="search__form mfp-hide" id="search-popup">
+                  <input class="input-field search-field" type="text" placeholder="Введите ваш запрос" maxlength="70">
+                  <input class="search__button performance__group-button performance__group-button--search btn" type="submit" value="Найти">
+                </div>
+              </div>
+              <ul class="header__nav">
+                <li class="header__nav-item"><a class="header__nav-link" href="index.html">Главная</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="for_us_page.html">О нас</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="press_center_page.html">Пресс-центр</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="comitet_page.html">Комитеты</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="not_found_page.html">Проекты</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="not_found_page.html">Регионы</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="contacts_page.html">Контакты</a></li>
+              </ul>
+            </div>
+            <button class="hamburger hamburger--squeeze"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+          </div>
+        </div>
+      </header>
+      <div class="content">
+        <div class="header-main header-main-for-us header-img header-img-for-us" style="background-image:url('static/images/general/bg_other.png')">
+          <div class="header-main__container header-main-for-us__container container">
+            <div class="header-for-us__label">
+              <h2 class="header__label-title block__title header-for-us__label-title">Интересное название</h2>
+            </div>
+          </div>
+        </div>
+        <section class="s-breadcrumbs">
+          <div class="s-breadcrumbs__container container">
+            <ul class="breadcrumbs">
+              <svg class="svg-sprite-icon icon-home breadcrumbs__icon">
+                <use xlink:href="static/images/svg/symbol/sprite.svg#home"></use>
+              </svg>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link block__text" href="index.html">Главная страница</a></li>
+              <li class="breadcrumbs__item"><span class="breadcrumbs__link block__text">Комитеты</span></li>
+            </ul>
+          </div>
+        </section>
+        <div class="comitet-page" style="background-image:url('static/images/general/bg2.png')">
+          <div class="comitet-page__container container">
+            <div class="for-us-page__saidbar for-us-page__saidbar-left">
+              <ul class="for-us-page__nav for-us-page__title">О нас
+                <li class="for-us-page__list"><a class="for-us-page__link" href="for_us_page.html">Вступить</a></li>
+                <li class="for-us-page__list"><a class="for-us-page__link" href="for_us_page.html">Руководящие органы</a></li>
+                <li class="for-us-page__list"><a class="for-us-page__link" href="for_us_page.html">Уставные документы</a></li>
+                <li class="for-us-page__list"><a class="for-us-page__link" href="for_us_page.html">Официальная символика</a></li>
+              </ul>
+              <ul class="for-us-page__nav for-us-page__title">Пресс-центр
+                <li class="for-us-page__list"><a class="for-us-page__link" href="press_center_page.html">Анонсы мероприятий</a></li>
+                <li class="for-us-page__list"><a class="for-us-page__link" href="press_center_page.html">Новости</a></li>
+                <li class="for-us-page__list"><a class="for-us-page__link" href="press_center_page.html">Фото</a></li>
+                <li class="for-us-page__list"><a class="for-us-page__link" href="press_center_page.html">Видео	</a></li>
+                <li class="for-us-page__list"><a class="for-us-page__link" href="press_center_page.html">СМИ о нас</a></li>
+              </ul>
+              <ul class="for-us-page__nav for-us-page__title">Комитеты
+                <li class="for-us-page__list"><a class="for-us-page__link" href="comitet_page.html">Лица</a></li>
+                <li class="for-us-page__list"><a class="for-us-page__link" href="comitet_page.html">Новости</a></li>
+                <li class="for-us-page__list"><a class="for-us-page__link" href="comitet_page.html">Фото	</a></li>
+                <li class="for-us-page__list"><a class="for-us-page__link" href="comitet_page.html">Видео</a></li>
+                <li class="for-us-page__list"><a class="for-us-page__link" href="comitet_page.html">СМИ о проекте</a></li>
+                <li class="for-us-page__list"><a class="for-us-page__link" href="comitet_page.html">Положения</a></li>
+                <li class="for-us-page__list"><a class="for-us-page__link" href="comitet_page.html">Состав</a></li>
+              </ul>
+              <ul class="for-us-page__nav for-us-page__title">Дополнительно
+                <li class="for-us-page__list"><a class="for-us-page__link" href="not_found_page.html">Проекты</a></li>
+                <li class="for-us-page__list"><a class="for-us-page__link" href="not_found_page.html">Регионы</a></li>
+                <li class="for-us-page__list"><a class="for-us-page__link" href="contacts_page.html">Контакты</a></li>
+                <li class="for-us-page__list"><a class="for-us-page__link js-footer-login js-popup-link" href="#login-popup">Вход</a></li>
+              </ul>
+            </div>
+            <svg class="svg-sprite-icon icon-next saidbar-arrow-left">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#next"></use>
+            </svg>
+            <div class="press-center__main">
+              <h2 class="for-us-page__title block__title block__title--other">Лица</h2>
+              <div class="face-slider js-slider-other--face">
+                <div class="face-block"><img class="face-block__img" src="static/images/content/face1.jpg" alt="Фото анонса">
+                  <h5 class="for-us-page__title for-us-page__title-text for-us-page__title--face">Елена <br>Еленова</h5>
+                  <p class="doc__text block__text doc__text--face">Менеджер</p>
+                </div>
+                <div class="face-block"><img class="face-block__img" src="static/images/content/face2.jpg" alt="Фото анонса">
+                  <h5 class="for-us-page__title for-us-page__title-text for-us-page__title--face">Иван <br>Иванов</h5>
+                  <p class="doc__text block__text doc__text--face">Менеджер</p>
+                </div>
+                <div class="face-block"><img class="face-block__img" src="static/images/content/face3.jpg" alt="Фото анонса">
+                  <h5 class="for-us-page__title for-us-page__title-text for-us-page__title--face">Александр <br>Александров</h5>
+                  <p class="doc__text block__text doc__text--face">Менеджер</p>
+                </div>
+                <div class="face-block"><img class="face-block__img" src="static/images/content/face4.jpg" alt="Фото анонса">
+                  <h5 class="for-us-page__title for-us-page__title-text for-us-page__title--face">Евгения <br>Евгеньева</h5>
+                  <p class="doc__text block__text doc__text--face">Менеджер</p>
+                </div>
+                <div class="face-block"><img class="face-block__img" src="static/images/content/face5.jpg" alt="Фото анонса">
+                  <h5 class="for-us-page__title for-us-page__title-text for-us-page__title--face">Екатерина <br>Екатеринова</h5>
+                  <p class="doc__text block__text doc__text--face">Менеджер</p>
+                </div>
+                <div class="face-block"><img class="face-block__img" src="static/images/content/face6.jpg" alt="Фото анонса">
+                  <h5 class="for-us-page__title for-us-page__title-text for-us-page__title--face">Василий <br>Васильев</h5>
+                  <p class="doc__text block__text doc__text--face">Менеджер</p>
+                </div>
+                <div class="face-block"><img class="face-block__img" src="static/images/content/face7.jpg" alt="Фото анонса">
+                  <h5 class="for-us-page__title for-us-page__title-text for-us-page__title--face">Дмитрий <br>Дмитриев</h5>
+                  <p class="doc__text block__text doc__text--face">Менеджер</p>
+                </div>
+                <div class="face-block"><img class="face-block__img" src="static/images/content/face8.jpg" alt="Фото анонса">
+                  <h5 class="for-us-page__title for-us-page__title-text for-us-page__title--face">Сергей <br>Сергеев</h5>
+                  <p class="doc__text block__text doc__text--face">Менеджер</p>
+                </div>
+              </div>
+              <div class="slider-arrow slider-arrow--comitet">
+                <svg class="svg-sprite-icon icon-arr_next slider-arrow-next">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#arr_next"></use>
+                </svg>
+                <svg class="svg-sprite-icon icon-arr_back slider-arrow-back">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#arr_back"></use>
+                </svg>
+              </div>
+              <div class="press-center__main-news">
+                <h2 class="for-us-page__title block__title block__title--other">Новости комитетов</h2>
+                <div class="press-news"><img class="press-news__img" src="static/images/content/news1.jpg" alt="Фото новости">
+                  <div class="press-news__text-block">
+                    <h5 class="for-us-page__title for-us-page__title-text">Название новости</h5>
+                    <time class="anons__prev-date block__date" datetime="01.01.2019T12.00">01.01.2019 12.00</time>
+                    <p class="doc__text block__text press-news__text">Идейные соображения высшего порядка, а также новая модель организационной деятельности позволяет выполнять важные задания по разработке соответствующий условий активизации.</p><a class="press-news__more" href="not_found_page.html">Читать полностью</a>
+                  </div>
+                </div>
+                <div class="press-news"><img class="press-news__img" src="static/images/content/news2.jpg" alt="Фото новости">
+                  <div class="press-news__text-block">
+                    <h5 class="for-us-page__title for-us-page__title-text">Название новости</h5>
+                    <time class="anons__prev-date block__date" datetime="01.01.2019T12.00">01.01.2019 12.00</time>
+                    <p class="doc__text block__text press-news__text">Идейные соображения высшего порядка, а также новая модель организационной деятельности позволяет выполнять важные задания по разработке соответствующий условий активизации.</p><a class="press-news__more" href="not_found_page.html">Читать полностью</a>
+                  </div>
+                </div>
+                <div class="press-news"><img class="press-news__img" src="static/images/content/news3.jpg" alt="Фото новости">
+                  <div class="press-news__text-block">
+                    <h5 class="for-us-page__title for-us-page__title-text">Название новости</h5>
+                    <time class="anons__prev-date block__date" datetime="01.01.2019T12.00">01.01.2019 12.00</time>
+                    <p class="doc__text block__text press-news__text">Идейные соображения высшего порядка, а также новая модель организационной деятельности позволяет выполнять важные задания по разработке соответствующий условий активизации.</p><a class="press-news__more" href="not_found_page.html">Читать полностью</a>
+                  </div>
+                </div>
+                <div class="press-news"><img class="press-news__img" src="static/images/content/news4.jpg" alt="Фото новости">
+                  <div class="press-news__text-block">
+                    <h5 class="for-us-page__title for-us-page__title-text">Название новости</h5>
+                    <time class="anons__prev-date block__date" datetime="01.01.2019T12.00">01.01.2019 12.00</time>
+                    <p class="doc__text block__text press-news__text">Идейные соображения высшего порядка, а также новая модель организационной деятельности позволяет выполнять важные задания по разработке соответствующий условий активизации.</p><a class="press-news__more" href="not_found_page.html">Читать полностью</a>
+                  </div>
+                </div>
+                <div class="press-news"><img class="press-news__img" src="static/images/content/news5.jpg" alt="Фото новости">
+                  <div class="press-news__text-block">
+                    <h5 class="for-us-page__title for-us-page__title-text">Название новости</h5>
+                    <time class="anons__prev-date block__date" datetime="01.01.2019T12.00">01.01.2019 12.00</time>
+                    <p class="doc__text block__text press-news__text">Идейные соображения высшего порядка, а также новая модель организационной деятельности позволяет выполнять важные задания по разработке соответствующий условий активизации.</p><a class="press-news__more" href="not_found_page.html">Читать полностью</a>
+                  </div>
+                </div>
+              </div>
+              <div class="press-center__main-photo">
+                <h2 class="for-us-page__title block__title block__title--other">Фото комитетов</h2>
+                <div class="press-photo js-press-photo"><a class="press-photo__link" href="static/images/content/sl11.jpg"><img class="press-photo__image press-photo__image--photo" src="static/images/content/sl11.jpg" alt="Фото из пресс-центра"></a><a class="press-photo__link" href="static/images/content/sl12.jpg"><img class="press-photo__image press-photo__image--photo" src="static/images/content/sl12.jpg" alt="Фото из пресс-центра"></a><a class="press-photo__link" href="static/images/content/sl13.jpg"><img class="press-photo__image press-photo__image--photo" src="static/images/content/sl13.jpg" alt="Фото из пресс-центра"></a><a class="press-photo__link" href="static/images/content/sl14.jpg"><img class="press-photo__image press-photo__image--photo" src="static/images/content/sl14.jpg" alt="Фото из пресс-центра"></a><a class="press-photo__link" href="static/images/content/sl15.jpg"><img class="press-photo__image press-photo__image--photo" src="static/images/content/sl15.jpg" alt="Фото из пресс-центра"></a><a class="press-photo__link" href="static/images/content/sl16.jpg"><img class="press-photo__image press-photo__image--photo" src="static/images/content/sl16.jpg" alt="Фото из пресс-центра"></a><a class="press-photo__link" href="static/images/content/sl21.jpg"><img class="press-photo__image press-photo__image--photo" src="static/images/content/sl21.jpg" alt="Фото из пресс-центра"></a><a class="press-photo__link" href="static/images/content/sl22.jpg"><img class="press-photo__image press-photo__image--photo" src="static/images/content/sl22.jpg" alt="Фото из пресс-центра"></a><a class="press-photo__link" href="static/images/content/sl23.jpg"><img class="press-photo__image press-photo__image--photo" src="static/images/content/sl23.jpg" alt="Фото из пресс-центра"></a></div>
+              </div>
+              <div class="press-center__main-photo press-center__main-photo--video">
+                <h2 class="for-us-page__title block__title block__title--other">Видео комитетов</h2>
+                <div class="press-photo press-photo--video">
+                  <iframe class="press-photo__image press-photo__image--video" width="560" height="315" src="https://www.youtube.com/embed/Wi8e5T4i61Y?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe class="press-photo__image press-photo__image--video" width="560" height="315" src="https://www.youtube.com/embed/043sPQZaack?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe class="press-photo__image press-photo__image--video" width="560" height="315" src="https://www.youtube.com/embed/JkHQmcQO9Is?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe class="press-photo__image press-photo__image--video" width="560" height="315" src="https://www.youtube.com/embed/Wi8e5T4i61Y?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe class="press-photo__image press-photo__image--video" width="560" height="315" src="https://www.youtube.com/embed/043sPQZaack?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe class="press-photo__image press-photo__image--video" width="560" height="315" src="https://www.youtube.com/embed/JkHQmcQO9Is?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+              <h2 class="for-us-page__title block__title block__title--other">СМИ о нас</h2>
+              <div class="for-us-page__wrapper">
+                <ul class="for-us-page__listing">
+                  <li class="for-us-page__item block__text"><a href="#">Идейные соображения высшего порядка, а также новая модель</a></li>
+                  <li class="for-us-page__item block__text"><a href="#">Разнообразный богатый опыт развитие</a></li>
+                  <li class="for-us-page__item block__text"><a href="#">Идейные соображения высшего порядка, а также новая модель</a></li>
+                  <li class="for-us-page__item block__text"><a href="#">Разнообразный богатый опыт развитие</a></li>
+                  <li class="for-us-page__item block__text"><a href="#">Идейные соображения высшего порядка, а также новая модель</a></li>
+                  <li class="for-us-page__item block__text"><a href="#">Разнообразный богатый опыт развитие</a></li>
+                </ul>
+              </div>
+              <h2 class="for-us-page__title block__title block__title--other">Положения</h2>
+              <p class="for-us-page__part block__text">Товарищи! рамки и место обучения кадров требуют определения и уточнения существенных финансовых и административных условий. Разнообразный и богатый опыт постоянный количественный рост и сфера нашей активности позволяет оценить значение существенных финансовых и административных условий. Идейные соображения высшего порядка, а также новая модель организационной деятельности в значительной степени обуславливает создание направлений прогрессивного развития. Задача организации, в особенности же дальнейшее развитие различных форм деятельности способствует подготовки и реализации существенных финансовых и административных условий. Идейные соображения высшего порядка, а также новая модель организационной деятельности требуют от нас анализа соответствующий условий активизации.</p>
+              <h5 class="for-us-page__title for-us-page__title-text">Название раздела</h5>
+              <ul class="for-us-page__listing">
+                <li class="for-us-page__item block__text">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет выполнять.</li>
+                <li class="for-us-page__item block__text">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет выполнять.</li>
+                <li class="for-us-page__item block__text">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет выполнять.</li>
+                <li class="for-us-page__item block__text">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет выполнять.</li>
+                <li class="for-us-page__item block__text">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет выполнять.</li>
+                <li class="for-us-page__item block__text">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет выполнять.</li>
+              </ul>
+              <h2 class="for-us-page__title block__title block__title--other">Состав			</h2>
+              <ul class="for-us-page__listing">
+                <li class="for-us-page__item block__text">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет выполнять.</li>
+                <li class="for-us-page__item block__text">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет выполнять.</li>
+                <li class="for-us-page__item block__text">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет выполнять.</li>
+                <li class="for-us-page__item block__text">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет выполнять.</li>
+                <li class="for-us-page__item block__text">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет выполнять.</li>
+                <li class="for-us-page__item block__text">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности позволяет выполнять.</li>
+              </ul>
+            </div>
+            <div class="for-us-page__saidbar for-us-page__saidbar-right">
+              <div class="for-us-page__subs for-us-page__group">
+                <h5 class="for-us-page__title for-us-page__title">Подписаться</h5>
+                <input class="input-field for-us-page__form" type="email" name="email" placeholder="Введите ваш email">
+                <input class="for-us-page__button-subs btn-discover btn" type="submit" value="Подписаться">
+              </div>
+              <div class="for-us-page__anons for-us-page__group"><a class="for-us-page__title for-us-page__title-subs" href="not_found_page.html">Мероприятия</a><img class="for-us-page__prev" src="static/images/content/bg_anons.png" alt="фото мероприятия">
+                <time class="for-us-page__date block__date" datetime="02.02.2019T16.00">02.02.2019 16.00</time>
+                <p class="for-us-page__news block__text">Мы предлагаем полный спектр услуг по разработке сайтов.</p>
+              </div>
+              <div class="for-us-page__news for-us-page__group"><a class="for-us-page__title for-us-page__title-subs" href="not_found_page.html">Новости</a>
+                <p class="for-us-page__news block__text">Мы предлагаем полный спектр услуг по разработке сайтов.</p>
+                <time class="for-us-page__date block__date" datetime="02.02.2019T16.00">02.02.2019 16.00</time>
+              </div>
+              <div class="for-us-page__news for-us-page__group">
+                <div class="for-us-page__social">
+                  <h5 class="for-us-page__title for-us-page__title-subs">Поделиться</h5><a href="https://vk.com/">
+                    <svg class="svg-sprite-icon icon-vk for-us-page__social-icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#vk"></use>
+                    </svg></a><a href="https://www.facebook.com/">
+                    <svg class="svg-sprite-icon icon-fb for-us-page__social-icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#fb"></use>
+                    </svg></a><a href="https://www.linkedin.com/">
+                    <svg class="svg-sprite-icon icon-liin for-us-page__social-icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#liin"></use>
+                    </svg></a><a href="https://www.instagram.com/">
+                    <svg class="svg-sprite-icon icon-inst for-us-page__social-icon">
+                      <use xlink:href="static/images/svg/symbol/sprite.svg#inst"></use>
+                    </svg></a>
+                </div>
+              </div>
+            </div>
+            <svg class="svg-sprite-icon icon-back saidbar-arrow-right">
+              <use xlink:href="static/images/svg/symbol/sprite.svg#back"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__contacts footer__group">
+            <div class="footer__logo"><img class="footer__logo-img logo-img" src="static/images/general/logo.png" alt="Российский центр деловых переговоров">
+              <div class="footer__logo-text">
+                <p class="footer__logo-title logo-title">Российский центр <br>деловых переговоров</p>
+                <p class="footer__logo-subtitle logo-subtitle">Общероссийская общественная организация</p>
+              </div>
+            </div><a class="phone phone-footer" href="tel:+73812500600">+7 (3812) 500-600</a><a class="email email-footer" href="mailto:mail@rcdp.ru">mail@rcdp.ru</a>
+          </div>
+          <div class="footer__for_us footer__group">
+            <h5 class="for_us__title footer__title">О нас</h5>
+            <ul class="for_us__nav footer__nav">
+              <li class="for_us__list"><a class="for_us__link footer__link" href="for_us_page.html">Вступить</a></li>
+              <li class="for_us__list"><a class="for_us__link footer__link" href="for_us_page.html">Руководящие органы</a></li>
+              <li class="for_us__list"><a class="for_us__link footer__link" href="for_us_page.html">Уставные документы</a></li>
+              <li class="for_us__list"><a class="for_us__link footer__link" href="for_us_page.html">Официальноя символика</a></li>
+            </ul>
+            <h5 class="for_us__title footer__title">Пресс-центр</h5>
+            <ul class="for_us__nav">
+              <li class="for_us__list"><a class="for_us__link footer__link" href="press_center_page.html">Анонсы мероприятий</a></li>
+              <li class="for_us__list"><a class="for_us__link footer__link" href="press_center_page.html">Новости</a></li>
+              <li class="for_us__list"><a class="for_us__link footer__link" href="press_center_page.html">Фото</a></li>
+              <li class="for_us__list"><a class="for_us__link footer__link" href="press_center_page.html">Видео</a></li>
+              <li class="for_us__list"><a class="for_us__link footer__link" href="press_center_page.html">СМИ о нас			</a></li>
+            </ul>
+          </div>
+          <div class="footer__comitet footer__group">
+            <h5 class="comitet__title footer__title">Комитеты</h5>
+            <ul class="comitet__nav footer__nav">
+              <li class="comitet__list"><a class="comitet__link footer__link" href="comitet_page.html">О комитете</a></li>
+              <li class="comitet__list"><a class="comitet__link footer__link" href="comitet_page.html">Лица</a></li>
+              <li class="comitet__list"><a class="comitet__link footer__link" href="comitet_page.html">Новости</a></li>
+              <li class="comitet__list"><a class="comitet__link footer__link" href="comitet_page.html">Фото</a></li>
+              <li class="comitet__list"><a class="comitet__link footer__link" href="comitet_page.html">Видео</a></li>
+              <li class="comitet__list"><a class="comitet__link footer__link" href="comitet_page.html">СМИ о проекте</a></li>
+              <li class="comitet__list"><a class="comitet__link footer__link" href="comitet_page.html">Положения</a></li>
+              <li class="comitet__list"><a class="comitet__link footer__link" href="comitet_page.html">Состав</a></li>
+            </ul>
+          </div>
+          <div class="footer__social footer__group">
+            <div class="social-menu">
+              <h5 class="social__title footer__title">Дополнительно</h5>
+              <ul class="social__nav footer__nav">
+                <li class="social__list"><a class="social__link footer__link" href="not_found_page.html">Проекты</a></li>
+                <li class="social__list"><a class="social__link footer__link" href="not_found_page.html">Регионы</a></li>
+                <li class="social__list"><a class="social__link footer__link" href="contacts_page.html">Контакты</a></li>
+                <li class="social__list"><a class="social__link footer__link js-footer-login js-popup-link" href="#login-popup">Вход</a></li>
+              </ul>
+            </div>
+            <div class="social-icons footer__social-icons"><a href="https://vk.com/">
+                <svg class="svg-sprite-icon icon-vk social__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#vk"></use>
+                </svg></a><a href="https://www.facebook.com/">
+                <svg class="svg-sprite-icon icon-fb social__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#fb"></use>
+                </svg></a><a href="https://www.linkedin.com/">
+                <svg class="svg-sprite-icon icon-liin social__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#liin"></use>
+                </svg></a><a href="https://www.instagram.com/">
+                <svg class="svg-sprite-icon icon-inst social__icon">
+                  <use xlink:href="static/images/svg/symbol/sprite.svg#inst"></use>
+                </svg></a></div>
+          </div>
+        </div>
+      </footer>
+      <svg class="svg-sprite-icon icon-scroll_up button__scroll_up">
+        <use xlink:href="static/images/svg/symbol/sprite.svg#scroll_up"></use>
+      </svg>
+    </div>
+    <script src="static/js/jquery-3.3.1.min.js"></script>
+    <script src="static/js/libs.min.js"></script>
+    <script src="static/js/main.js"></script>
+  </body>
+</html>
